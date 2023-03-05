@@ -1,0 +1,159 @@
+.events-section-bg {
+  background-image: url('./images/event-banner.jpg');
+  background: #C04848;
+  /* fallback for old browsers */
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/event-banner.jpg");
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(82, 72, 72, 0.2), rgba(0, 0, 0, 0.3)), url("./images/event-banner.jpg");
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow: hidden; */
+  width: 100%;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+.upcoming-events-bg {
+  display: flex;
+}
+
+.upcoming-events-bg .upcoming-events-container {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.upcoming-events-bg .upcoming-events-container .upcoming-events-description {
+  width: 100%;
+}
+
+.upcoming-events-bg .upcoming-events-container .upcoming-events-description .title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #202020;
+  margin-top: 3em;
+}
+
+.upcoming-eventslist-bg {
+  display: flex;
+}
+
+.upcoming-eventslist-bg .upcoming-events-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.upcoming-events-wrapper .upcoming-eventslist-wrapper {
+  padding: 20px;
+}
+
+.upcoming-thumbnail {
+  width: 100%;
+}
+
+.upcoming-thumbnail img {
+  display: flex;
+  max-width: 400px;
+}
+
+.event-date-box {
+  position: absolute;
+  margin-top: -267px;
+  width: 150px;
+  background-color: #2a9c9c;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.event-date-box .date-box-day {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.event-date-box .date-box-month {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: .3em;
+  font-weight: bold;
+}
+
+.event-date-box .date-box-year {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.upcoming-eventslist-wrapper .upcoming-eventslist-container .upcoming-details-bg {
+  height: auto;
+  background-color: #202020;
+  color: aliceblue;
+  font-size: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.upcoming-details .title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.d-block {
+  display: flex;
+  justify-content: left;
+  padding: .5em;
+  font-size: 18px;
+}
+
+.d-block img {
+  width: 20px;
+  height: 20px;
+  margin-right: .3em;
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 540px) {}
+
+@media screen and (max-width: 450px) {
+
+  .upcoming-thumbnail img {
+    display: flex;
+    max-width: 350px;
+  }
+
+  .event-date-box {
+    margin-top: -234px;
+    width: 130px;
+    padding: 5px;
+  }
+
+  .event-date-box .date-box-day {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .event-date-box .date-box-month {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: .3em;
+  }
+
+  .event-date-box .date-box-year {
+    font-size: 25px;
+  }
+
+  .upcoming-events-wrapper .upcoming-eventslist-wrapper {
+    padding: 15px 0px 15px 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 375px) {}
